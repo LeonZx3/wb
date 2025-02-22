@@ -9,10 +9,14 @@
 <body>
     <div class="container">
         <h1>Escaner de Códigos de Barras</h1>
-        <div id="scanner"></div>
-        <button id="startScanner">Iniciar Escáner</button>
-        <h2>Códigos Escaneados</h2>
-        <ul id="scannedCodes"></ul>
+        <div class="scanner-container">
+            <div id="scanner"></div>
+            <button id="startScanner">Iniciar Escáner</button>
+        </div>
+        <div class="results">
+            <h2>Códigos Escaneados</h2>
+            <ul id="scannedCodes"></ul>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>

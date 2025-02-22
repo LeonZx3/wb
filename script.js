@@ -1,4 +1,5 @@
 document.getElementById('startScanner').addEventListener('click', function() {
+    // Inicializar QuaggaJS
     Quagga.init({
         inputStream: {
             name: "Live",
@@ -22,6 +23,7 @@ document.getElementById('startScanner').addEventListener('click', function() {
         Quagga.start();
     });
 
+    // Detectar códigos de barras
     Quagga.onDetected(function(result) {
         const code = result.codeResult.code;
         const listItem = document.createElement('li');
